@@ -15,10 +15,6 @@ header{
     width: 100%;
     z-index: 1000;
 }
-.narbar{
-    display: flex;
-    justify-content: center;
-}
 .logo img{
     height:100%;
 }
@@ -49,7 +45,6 @@ li a{
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
   padding: 4rem 6rem;
   gap: 2rem;
   background-color:#639ff1;
@@ -129,10 +124,8 @@ animation: slideIn 1s ease forwards; /*anime of home content */
 }
 
 /* about section */
-.about{
-    background-color: black;
-    padding-top: 80px;
-    margin-top: -80px;    
+#about{
+    /* background-color: black; */
 }
 h2{
     text-align: center;
@@ -187,7 +180,7 @@ h2{
   margin: auto;
   background-color: #8FD9A8;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 90px;
 }
 
 .item {
@@ -406,11 +399,7 @@ footer div {
 
 /* responsiveness */
 
-/* ============================== */
-/* 📱 Responsive Design (No rem) */
-/* ============================== */
-
-/* iPad Mini (width ≤ 768px) */
+/* iPad Mini */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -447,8 +436,7 @@ footer div {
     padding: 20px;
   }
 
-  .about-text,
-  .about-image {
+  .about-text, .about-image {
     width: 100%;
     margin-left: 0;
   }
@@ -458,10 +446,7 @@ footer div {
     width: 80%;
   }
 
-  .skills_section,
-  .certifications,
-  #projects,
-  #contact {
+  .skills_section, .certifications, #projects, #contact {
     padding: 20px;
     border-radius: 12px;
     width: 95%;
@@ -485,7 +470,7 @@ footer div {
   }
 }
 
-/* Samsung Galaxy S8+ (width ≤ 400px) */
+/* Samsung Galaxy S8 */
 @media (max-width: 400px) {
   header {
     flex-direction: column;
@@ -524,10 +509,7 @@ footer div {
     width: 90%;
   }
 
-  .skills_section,
-  .certifications,
-  #projects,
-  #contact {
+  .skills_section, .certifications, #projects, #contact {
     padding: 15px;
     margin: 10px;
     width: 95%;
@@ -544,8 +526,7 @@ footer div {
     justify-content: center;
   }
 
-  form input,
-  form textarea {
+  form input, form textarea {
     font-size: 14px;
   }
 
