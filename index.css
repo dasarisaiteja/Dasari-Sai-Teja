@@ -1,6 +1,6 @@
 *{
-    margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  margin-top: 0px;
   /* background-color:red ; */
 }
 /* nav bar */
@@ -124,7 +124,6 @@ animation: slideIn 1s ease forwards; /*anime of home content */
 }
 
 /* about section */
-    /* background-color: black; */
 h2{
     text-align: center;
     color: #4458dc;
@@ -401,6 +400,7 @@ footer div {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
+    position: static;
     height: auto;
     align-items: center;
     padding: 10px;
@@ -472,6 +472,7 @@ footer div {
 @media (max-width: 400px) {
   header {
     flex-direction: column;
+    position: static;
     height: auto;
     padding: 8px;
   }
